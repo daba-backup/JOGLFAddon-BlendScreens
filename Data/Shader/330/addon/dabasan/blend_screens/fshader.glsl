@@ -22,8 +22,8 @@ vec4 Sub(vec4 color_0,vec4 color_1){
 vec4 Mul(vec4 color_0,vec4 color_1){
     return clamp(color_0*color_1,0.0,1.0);
 }
-vec4 Overlay(vec4 color_0,vec4 color_1){
-    vec4 color=color_0*color_0.a+color_1*(1.0-color_0.a);
+vec4 Overlay(vec4 foreground,vec4 background){
+    vec4 color=foreground*foreground.a+background*(1.0-foreground.a);
     return clamp(color,0.0,1.0);
 }
 
