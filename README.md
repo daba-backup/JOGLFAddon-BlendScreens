@@ -2,6 +2,16 @@
 
 Blend two screens.
 
+# Installation
+
+```xml
+<dependency>
+    <groupId>com.github.dabasan</groupId>
+    <artifactId>joglfaddon-blendscreens</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 # Screenshots
 
 **Screen A**
