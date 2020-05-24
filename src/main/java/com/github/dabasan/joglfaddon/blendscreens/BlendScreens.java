@@ -54,12 +54,12 @@ public class BlendScreens {
 	/**
 	 * A - B
 	 * 
-	 * @param Screen
-	 *            A
-	 * @param Screen
-	 *            B
-	 * @param Destination
-	 *            screen
+	 * @param a
+	 *            Screen A
+	 * @param b
+	 *            Screen B
+	 * @param dst
+	 *            Destination screen
 	 */
 	public void Sub(Screen a, Screen b, Screen dst) {
 		program.Enable();
