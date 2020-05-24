@@ -14,8 +14,8 @@ import com.github.dabasan.joglf.gl.util.screen.Screen;
  *
  */
 public class BlendScreens {
-	private ShaderProgram program;
-	private FullscreenQuadTransferrerWithUV transferrer;
+	private final ShaderProgram program;
+	private final FullscreenQuadTransferrerWithUV transferrer;
 
 	private static final int OPERATION_ADD = 1;
 	private static final int OPERATION_SUB = 2;
