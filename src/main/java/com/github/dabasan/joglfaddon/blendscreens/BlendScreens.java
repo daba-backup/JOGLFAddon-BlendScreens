@@ -23,7 +23,7 @@ public class BlendScreens {
 	private static final int OPERATION_OVERLAY = 4;
 
 	public BlendScreens() {
-		program = new ShaderProgram("blend_screens",
+		program = new ShaderProgram("dabasan/blend_screens",
 				"./Data/Shader/330/addon/dabasan/blend_screens/vshader.glsl",
 				"./Data/Shader/330/addon/dabasan/blend_screens/fshader.glsl");
 		transferrer = new FullscreenQuadTransferrerWithUV(true);
