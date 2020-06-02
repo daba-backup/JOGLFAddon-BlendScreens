@@ -1,6 +1,6 @@
 # JOGLFAddon-BlendScreens
 
-Blend two screens.
+JOGLFAddon to blend two screens
 
 # Installation
 
@@ -8,7 +8,7 @@ Blend two screens.
 <dependency>
     <groupId>com.github.dabasan</groupId>
     <artifactId>joglfaddon-blendscreens</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
 </dependency>
 ```
 
