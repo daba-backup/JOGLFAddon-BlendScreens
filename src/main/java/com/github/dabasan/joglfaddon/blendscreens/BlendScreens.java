@@ -6,9 +6,10 @@ import static com.jogamp.opengl.GL.*;
 import com.github.dabasan.joglf.gl.shader.ShaderProgram;
 import com.github.dabasan.joglf.gl.transferrer.FullscreenQuadTransferrerWithUV;
 import com.github.dabasan.joglf.gl.util.screen.Screen;
+import com.github.dabasan.joglf.gl.util.screen.ScreenBase;
 
 /**
- * Blends screens.
+ * Blends two screens.
  * 
  * @author Daba
  *
@@ -61,7 +62,7 @@ public class BlendScreens {
 	 * @param dst
 	 *            Destination screen
 	 */
-	public void Sub(Screen a, Screen b, Screen dst) {
+	public void Sub(ScreenBase a, ScreenBase b, ScreenBase dst) {
 		program.Enable();
 
 		program.SetUniform("operation", OPERATION_SUB);
@@ -83,7 +84,7 @@ public class BlendScreens {
 	 * @param dst
 	 *            Destination screen
 	 */
-	public void Mul(Screen a, Screen b, Screen dst) {
+	public void Mul(ScreenBase a, ScreenBase b, ScreenBase dst) {
 		program.Enable();
 
 		program.SetUniform("operation", OPERATION_MUL);
@@ -105,7 +106,7 @@ public class BlendScreens {
 	 * @param dst
 	 *            Destination screen
 	 */
-	public void Overlay(Screen foreground, Screen background, Screen dst) {
+	public void Overlay(ScreenBase foreground, ScreenBase background, ScreenBase dst) {
 		program.Enable();
 
 		program.SetUniform("operation", OPERATION_OVERLAY);
@@ -117,7 +118,7 @@ public class BlendScreens {
 
 		program.Disable();
 	}
-	private void SetTextures(Screen a, Screen b) {
+	private void SetTextures(ScreenBase a, ScreenBase b) {
 		glActiveTexture(GL_TEXTURE0);
 		a.BindScreenTexture();
 		program.SetUniform("texture_0", 0);
