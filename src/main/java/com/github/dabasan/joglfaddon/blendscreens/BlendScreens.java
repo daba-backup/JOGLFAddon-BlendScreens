@@ -47,6 +47,7 @@ public class BlendScreens {
 		this.SetTextures(a, b);
 
 		dst.Enable();
+		dst.Clear();
 		transferrer.Transfer();
 		dst.Disable();
 
@@ -69,6 +70,7 @@ public class BlendScreens {
 		this.SetTextures(a, b);
 
 		dst.Enable();
+		dst.Clear();
 		transferrer.Transfer();
 		dst.Disable();
 
@@ -91,6 +93,7 @@ public class BlendScreens {
 		this.SetTextures(a, b);
 
 		dst.Enable();
+		dst.Clear();
 		transferrer.Transfer();
 		dst.Disable();
 
@@ -113,6 +116,7 @@ public class BlendScreens {
 		this.SetTextures(foreground, background);
 
 		dst.Enable();
+		dst.Clear();
 		transferrer.Transfer();
 		dst.Disable();
 
