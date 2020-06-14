@@ -5,7 +5,6 @@ import static com.jogamp.opengl.GL.*;
 
 import com.github.dabasan.joglf.gl.shader.ShaderProgram;
 import com.github.dabasan.joglf.gl.transferrer.FullscreenQuadTransferrerWithUV;
-import com.github.dabasan.joglf.gl.util.screen.Screen;
 import com.github.dabasan.joglf.gl.util.screen.ScreenBase;
 
 /**
@@ -40,7 +39,7 @@ public class BlendScreens {
 	 * @param dst
 	 *            Destination screen
 	 */
-	public void Add(Screen a, Screen b, Screen dst) {
+	public void Add(ScreenBase a, ScreenBase b, ScreenBase dst) {
 		program.Enable();
 
 		program.SetUniform("operation", OPERATION_ADD);
