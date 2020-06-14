@@ -8,7 +8,7 @@ JOGLFAddon to blend two screens
 <dependency>
     <groupId>com.github.dabasan</groupId>
     <artifactId>joglfaddon-blendscreens</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
